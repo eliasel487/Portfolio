@@ -45,7 +45,7 @@ ul.menu li a:hover {
     justify-content: center;  
     align-items: center; 
 }
-@media (max-width: 500px) {
+@media (max-width: 350px) {
   .ee_lo{
 	background: url("../photos/fond.gif");
     background-attachment: fixed;
@@ -125,5 +125,6 @@ ul.menu li a:hover {
 .liens-utiles li a i {
     font-size: 3rem; /* tu peux ajuster : 2rem, 2.5rem, etc. */
 }
+
 
 
