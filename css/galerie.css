@@ -1,0 +1,167 @@
+ul.menu {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu li a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.bb {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+}
+
+.ha {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 30px 0;
+    letter-spacing: 2px;
+}
+
+
+.gallery-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 10% auto;
+}
+
+/* Grid de imágenes */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Item individual */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Imagen */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    opacity: 0.8;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.gallery-item:hover .caption {
+    opacity: 1;
+}
+.ee_lo{
+	background: url("../photos/Tozka.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.ee_lo h1 {
+  font-size: 8vw;
+  font-weight: bold;
+  margin: 0;
+}
+
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+    margin-top: 7.5%;
+}
+/* Lightbox invisible par défaut */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Lightbox visible quand ciblé */
+.lightbox:target {
+    display: flex;
+}
+
+/* Image agrandie */
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* Bouton fermer */
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+}

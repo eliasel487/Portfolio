@@ -1,0 +1,100 @@
+body {
+	background-color: black;
+	color: white;
+	font-size: 2vw;
+}
+
+ul.menu {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu li a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 40px auto;
+            background-color: #111; /* Fondo oscuro tabla */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #222;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #1a1a1a;
+        }
+
+        tr:hover {
+            background-color: #333;
+            transition: 0.3s;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+
+.ee_lo{
+	background: url("../photos/desing.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.ee_lo h1 {
+  font-size: 8vw;
+  font-weight: bold;
+  margin: 0;
+}
+.boton{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5vw;
+}
+.boton:hover {
+    background-color: #2e2d2d;
+    color: #ffffff;
+}

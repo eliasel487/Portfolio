@@ -1,0 +1,113 @@
+body {
+	background-color: black;
+	color: white;
+	font-size: 2vw;
+}
+
+ul.menu {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu li a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+
+.ee_lo{
+	background: url("../photos/fond.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.ee_lo h1 {
+  font-size: 8vw;
+  font-weight: bold;
+  margin: 0;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.image-gauche {
+    flex: 1;
+    text-align: center;
+}
+
+.image-gauche img {
+    width: 25vw;
+    max-width: none;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.boton{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5vw;
+}
+
+.boton:hover {
+    background-color: #2e2d2d;
+    color: #ffffff;
+}
+
+.liens-utiles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.liens-utiles li a:hover {
+  color: #ffffff;
+}
+.liens-utiles li a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espace entre l'icône et le texte */
+    color: white;
+    text-decoration: none;
+}
+
+.liens-utiles li a:hover {
+    color: #FFD700; /* change la couleur au survol */
+}
+.liens-utiles li a i {
+    font-size: 3rem; /* tu peux ajuster : 2rem, 2.5rem, etc. */
+}
